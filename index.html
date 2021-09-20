@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Felis</title>
+	
+	<meta name="robots" content="All">
+	<meta name="author" content="Udgiver">
+	<meta name="copyright" content="Information om copyright">
+	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="zoom">
+	<img src="images/magnusqt.png" class="zoom_layer zoom__layer--left js-zoom-magnus">
+	<img src="images/pote.png" class="zoom_layer zoom__layer--right js-zoom-pote">
+	<div class="zoom__text js-zoom-text">
+		<div>How to</div>
+		<div class="zoom__text--large">train</div>
+		<div class="text-right">your cat</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+<div class="content">
+<br><br>	<p>
+		As you are on this page, one can assume that you already own a cat. There are many reasons to have a cat!
+		They are good for your mental health, as they make you laugh and challenge yourself to become a better person.
+		Scientific evidence also shows that a cat's purr can calm your nervous system and lower your blood pressure and
+		improve your cardiovascular health. Cat owners have been reported to carry a lower risk for heart disease and stroke.
+		<br><br>One thing a cat owner can do to bond more with their cats is basic training.
+		<br><br>Contrary to popular belief, cats are just as fun to train as dogs! Cat training is a great way to connect with
+		your cat and teach them the meaning of a few key words.<br>
+		Often, training a cat <i>not</i> to do something, like training them not to bite or pull on a leash,
+		simply comes down to not provoking that behavior in the first place.
+		If your cat bites, teach them what to do instead by redirecting her predatory instincts to a feathery toy.
+		<br><br>
+		While cats can’t be trained to do the array of tasks dogs are bred for, basic training comes naturally to them.
+		Cats will instinctively use a litter box, and common dog behavior problems like play biting, separation anxiety,
+		and aggression are easy to avoid.
+		<br>
+		The benefits of cat training are vast.
+		Training provides mental and physical stimulation as well as positive social contact.
+		Just the act of training in and of itself is incredibly valuable for frustrated, bored, shy, and fearful cats.
+		<br><br>
+		Remember to have patience and keep sessions brief. <br><br>
+	</p>
+	<div class="row">
+
+	<div class="col"></div>
+	<div class="row">
+		<div class="col-12">
+			<h2 class="text-center">Basic commands</h2><br>
+		</div>
+		<div class="col-12">
+			<div class="embed-responsive embed-responsive-4by3"> </div>
+			<div style="padding: 100% 0 0 0;position:relative;">
+				<iframe src="https://player.vimeo.com/video/605566510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=24a51b3f86"
+						allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
+						title="magnus_tricks_mute.mp4">
+				</iframe>
+			</div>
+			<script src="https://player.vimeo.com/api/player.js"></script></div>
+	</div>
+</div>
+	<p><br>
+	<div class="container" id="commands">
+	<div class="row">
+	<div class="col-12 col-lg-4">
+		<div class="">
+		<h4 class="text-center"><b>Sit pretty</b></h4>
+	<br>Raise the treat high enough over your cats head so that she/he has to sit on her hind legs to reach it.
+	When your car is already in a sit, say “pretty,” as you	offer the treat up high, click and give the treat when
+	your accomplishes the trick.<br>
+		<div/>
+</div>
+		<br>
+</div>
+		<br>
+	</div>
+	<br>
+	<div class="col-12 col-lg-4">
+		<div class="">
+	<h4 class="text-center"><b>High five</b></h4>
+	<br>Hold a treat in front of your cat at their shoulder level.  When your cat reaches out her paw and
+	touch the hand holding the treat, click and then give the treat. Eventually she/he will understand to touch
+	your hand before getting the treat. When your cat is consistent with that, start
+	offering your hand in the palm up (high five) position and give the verbal cue “High five!” <br>
+	When your cat touches your palm, click and give the reward.<br><br>
+	</div>
+		<br>
+	</div>
+	<br>
+
+	<div class="col-12 col-lg-4">
+		<div class="">
+			<h4 class="text-center"><b>Shake</b></h4>
+	<br>Get a treat ready, then align yourself to the same level as your cat. Tap your cat’s paw while saying “shake,”
+	and use your clicker when it moves its paw. Repeat training until your cat offers its paw in response to the “shake”
+	command without tapping.
+		</div>
+	</div>
+
+	</p>
+</div>
+</div>
+</div>
+
+
+
+<script>
+	const zoomMagnus = document.querySelector('.js-zoom-magnus');
+	const zoomPote = document.querySelector('.js-zoom-pote');
+	const zoomText = document.querySelector('.js-zoom-text');
+
+	document.addEventListener('scroll', () => {
+		const scroll = window.pageYOffset;
+
+		zoomMagnus.style.width = (50 + scroll/5) + '%';
+		zoomMagnus.style.left = - scroll/5 + '%';
+		zoomMagnus.style.bottom = - scroll/5 + '%';
+
+		zoomPote.style.width = (60 + scroll/5) + '%';
+		zoomPote.style.right = - scroll/5 + '%';
+		zoomPote.style.bottom = - scroll/5 + '%';
+
+		zoomText.style.bottom = scroll/7 + '%';
+	});
+
+</script>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scriptt.js"></script>
+
+</body>
+</html>
